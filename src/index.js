@@ -18,7 +18,7 @@ app.on('ready', function() {
         {
             label: 'Run script',
             click: function() {
-                const command = '"' + __dirname + path.sep + 'tools' + path.sep + 'script.bat"';
+                const command = '"' + __dirname + path.sep + '..' + path.sep + 'tools' + path.sep + 'script.bat"';
 
                 exec(command, { async: true }, function(code, stdout, stderr) {
                     if (code) {
@@ -29,10 +29,10 @@ app.on('ready', function() {
 
                     var message = 'command=' + command + '\n__dirname=' + __dirname + '\ncode=' + code + '\nstdout=' + stdout + '\nstderr=' + stderr;
 
-                    console.log(dialog.showMessageBox({
+                    dialog.showMessageBox({
                         buttons: [],
                         message: message
-                    }));
+                    });
                 });
             }
         },

@@ -1,15 +1,8 @@
 {
-  "name": "ElectronTest",
-  "version": "0.0.1",
-  "description": "A test using Electron",
-  "productName": "Electron Test",
   "scripts": {
-    "start": "electron .",
-    "build-win": "node ./scripts/build-win.js"
-  },
-  "author": "Technology Will Save Us",
-  "dependencies": {
-    "electron": "^1.4.3"
+    "start": "electron ./app",
+    "build-win": "node ./scripts/build-win.js",
+    "installer-win": "blah"
   },
   "devDependencies": {
     "electron-packager": "^8.1.0"
