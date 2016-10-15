@@ -3,7 +3,7 @@ require('shelljs/global');
 const electron = require('electron');
 const path = require('path');
 
-const { app, Menu, Tray } = electron;
+const { app, dialog, Menu, Tray } = electron;
 
 var tray = null;
 
@@ -24,6 +24,10 @@ app.on('ready', function() {
                     console.log('code  ', code);
                     console.log('stdout', stdout);
                     console.log('stderr', stderr);
+                    console.log(dialog.showMessageBox({
+                        buttons: [],
+                        message: stdout
+                    }));
                 });
             }
         },
