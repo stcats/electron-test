@@ -4,11 +4,14 @@
   "description": "A test using Electron",
   "productName": "Electron Test",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build-win": "node ./scripts/build-win.js"
   },
   "author": "Technology Will Save Us",
   "dependencies": {
     "electron": "^1.4.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "electron-packager": "^8.1.0"
+  }
 }

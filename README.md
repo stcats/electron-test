@@ -2,10 +2,15 @@
 
     - Must work on Mac and Windows
     - Everything must be automated
-    - Must be packaged
-    - Must have an installer
+
+    - Windows package (.exe)
+    - Windows installer
     - On Windows, files must be copied to Program Files
+
+    - Mac package (.app)
+    - Mac installer
     - On Mac, files must be copied to Applications
+
     - Must load on startup
     - Must be signed (app and/or installer)
     - Must have internal folders that are accessible from main app (.exe or .app)

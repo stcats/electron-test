@@ -18,15 +18,20 @@ app.on('ready', function() {
         {
             label: 'Run script',
             click: function() {
-                const command = __dirname + path.sep + 'tools' + path.sep + 'script.bat';
+                const command = '"' + __dirname + path.sep + 'tools' + path.sep + 'script.bat"';
 
                 exec(command, { async: true }, function(code, stdout, stderr) {
-                    console.log('code  ', code);
-                    console.log('stdout', stdout);
-                    console.log('stderr', stderr);
+                    if (code) {
+                        console.log('code  ', code);
+                        console.log('stdout', stdout);
+                        console.log('stderr', stderr);
+                    }
+
+                    var message = 'command=' + command + '\n__dirname=' + __dirname + '\ncode=' + code + '\nstdout=' + stdout + '\nstderr=' + stderr;
+
                     console.log(dialog.showMessageBox({
                         buttons: [],
-                        message: stdout
+                        message: message
                     }));
                 });
             }
