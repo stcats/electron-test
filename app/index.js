@@ -5,6 +5,8 @@ require('shelljs/global');
 const electron = require('electron');
 const path = require('path');
 
+const AutoLaunch = require('auto-launch');
+
 const { app, dialog, Menu, Tray } = electron;
 
 var tray = null;
@@ -48,3 +50,9 @@ app.on('ready', function() {
 
     tray.setContextMenu(menu);
 });
+
+var autoLauncher = new AutoLaunch({
+    name: 'Electron Test'
+});
+
+autoLauncher.enable();

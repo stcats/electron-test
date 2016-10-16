@@ -5,6 +5,7 @@
   "author": "Technology Will Save Us",
   "productName": "Electron Test",
   "dependencies": {
+    "auto-launch": "^5.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "shelljs": "^0.7.4"
   }
