@@ -4,8 +4,7 @@
   "description": "A test using Electron",
   "author": "Technology Will Save Us",
   "productName": "Electron Test",
-  "main": "../src/",
   "dependencies": {
-    "electron": "^1.4.3"
+    "shelljs": "^0.7.4"
   }
 }

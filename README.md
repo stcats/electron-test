@@ -16,6 +16,8 @@
     - Must have internal folders that are accessible from main app (.exe or .app)
     - Must support autoupdate
 
+    - Need to make sure you can't open more than one instance at the same time
+
 ## Libraries
 
 ### Executable
@@ -40,10 +42,14 @@ atom/grunt-electron-installer                      2.1.0     30 releases       2
     
     Grunt task to generate Windows installers for Electron apps
 
+electron/windows-installer                         2.3.4     14 releases         ? /      ?  <----
+
+    NPM module that builds Windows installers for Electron apps using Squirrel.
+
 unindented/electron-installer-windows              0.2.0      4 releases        34 /    188
 
     Create a Windows package for your Electron app.
-    
+
 Aluxian/electron-windows-installer                 1.4.4     25 releases        27 /    212
 
     Build Windows installers for Electron apps using Squirrel. Works with Gulp!

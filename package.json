@@ -1,10 +1,22 @@
 {
   "scripts": {
     "start": "electron ./app",
-    "build-win": "node ./scripts/build-win.js",
-    "installer-win": "blah"
+    "pack-win": "rimraf ./dist && build --dir",
+    "dist-win": "rimraf ./dist && build"
   },
   "devDependencies": {
-    "electron-packager": "^8.1.0"
+    "electron": "^1.4.3",
+    "electron-builder": "^7.13.0",
+    "electron-packager": "^8.1.0",
+    "rimraf": "^2.5.4"
+  },
+  "build": {
+    "appId": "com.techwillsaveus.electron-test",
+    "asar": false,
+    "extraResources": "tools",
+    "squirrelWindows": {
+      "iconUrl": "http://make.techwillsaveus.com/favicon.ico",
+      "msi": true
+    }
   }
 }
