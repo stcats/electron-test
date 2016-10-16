@@ -1,3 +1,5 @@
+if (require('electron-squirrel-startup')) return;
+
 require('shelljs/global');
 
 const electron = require('electron');
