@@ -15,8 +15,7 @@
     "asar": false,
     "extraResources": "tools",
     "squirrelWindows": {
-      "iconUrl": "http://make.techwillsaveus.com/favicon.ico",
-      "msi": true
+      "iconUrl": "http://make.techwillsaveus.com/favicon.ico"
     }
   }
 }
